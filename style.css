@@ -8,6 +8,9 @@
 }
 body{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdtxvsee4lvuQRiIiWutV0JUiVGXcg4NM-zzVGas-a84kUQLp8v8lAZG5O_LpdfW3cfro&usqp=CAU");
+    background-repeat:no-repeat;
+    background-height: auto;
+    width: auto;
 }
 #kaas{
     margin-top: 50px;
