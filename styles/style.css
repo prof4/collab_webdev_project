@@ -69,3 +69,24 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+div.dropdown {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #info{
+    margin-top: 50px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+#soortMelding{
+    margin-top: 50px;
+}
+/*body{
+    background-image: url("https://www.cashadvance6online.com/data/archive/img/3016589362.jpeg");
+}**/
+#kaas{
+    margin-top: 50px;
+}
+#meldingdropdown{
+    margin: auto;
+}
