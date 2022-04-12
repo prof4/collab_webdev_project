@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>meld het</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDd7iLp9ZuJnXnQ3bxNdViIjDzlSPHxI6A",
+        authDomain: "meldzemetis.firebaseapp.com",
+        projectId: "meldzemetis",
+        storageBucket: "meldzemetis.appspot.com",
+        messagingSenderId: "977727669617",
+        appId: "1:977727669617:web:b275168f5ee3236f8762d0",
+        measurementId: "G-F4VGW51F7Y"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js" defer></script>
+
+  </head>
+  <nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./melding.html">Melding</a>
+            </li>
+            <li class="nav-item">
+            </li>
+            <section class="whenNavSignedIn" hidden="true">
+              <li class="nav-item">
+                <a class="nav-link" href="./dashboard.html">Dashboard</a>
+              </li>
+            </section>
+            
+          </ul>
+          <form class="d-flex">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <body>
+	  <script src="index.js"></script>
+    <center>
+      <h1 id="patat">Welkom!</h1>
+      <img src="data:image/png;base64,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" class="img-fluid" alt="Metis logo"><br>
+      <a href="./melding.html"><button type="button" id="kaas" class="btn btn-outline-success">Doe een melding</button><br></a>
+      <p id="info">Welkom Bij MeldZeMetis, op deze website kunt u een melding plaatsen over het Metis Montessori lyceum. Dit kan ook anoniem. Wij zullen hier dan ook zo spoedig mogelijk naar kijken.</p>
+    </center>
+  </body>
+</html>
