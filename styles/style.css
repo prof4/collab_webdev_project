@@ -90,6 +90,7 @@ div.dropdown {
 #meldingdropdown{
     margin: auto;
 }
-from-control{
-    margin-top: 50px;
+#formlogin{
+    margin: 0 auto;
+    float: none;
 }
